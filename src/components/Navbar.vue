@@ -72,4 +72,72 @@ img:hover {
 .contact:hover {
 	color: #ffffff;
 }
+
+@media screen and (max-width: 1500px) {
+	.navbar-wrapper {
+		width: 100vw;
+		height: 5rem;
+		flex-direction: row;
+	}
+
+	.img-container {
+		width: 4.5rem;
+		height: 100%;
+	}
+
+	.img-container:first-of-type {
+		margin-left: 1rem;
+	}
+
+	.img-container:last-of-type {
+		margin-right: auto;
+	}
+
+	img {
+		width: 2.5rem;
+		height: 2.5rem;
+		margin: 0 auto;
+	}
+
+	img:hover {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	.contact {
+		bottom: unset;
+		right: 2rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.navbar-wrapper {
+		height: 3.75rem;
+	}
+
+	.img-container {
+		width: 2.5rem;
+	}
+
+	.img-container:first-of-type {
+		margin-left: 0.375rem;
+	}
+
+	img {
+		width: 1.75rem;
+		height: 1.75rem;
+		transition: 0s;
+	}
+
+	img:hover {
+		width: 1.75rem;
+		height: 1.75rem;
+	}
+
+	.contact {
+		font-size: 1.15rem;
+		bottom: unset;
+		right: 0.65rem;
+	}
+}
 </style>

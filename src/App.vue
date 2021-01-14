@@ -35,7 +35,7 @@ export default {
 		Project,
 	},
 	created() {
-		document.title = "Testing";
+		document.title = "Isaac Folmsbee";
 	},
 	methods: {
 		scrollTo(targetClass) {
@@ -64,9 +64,9 @@ export default {
 }
 
 #intro {
-	width: 60%;
-	height: 80%;
-	margin: 10% auto;
+	width: 50vw;
+	height: 60vh;
+	margin: 30vh auto 10vh auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -77,6 +77,7 @@ export default {
 	color: #D6D6D6;
 	font-size: 4rem;
 	font-family: 'Francois One', sans-serif;
+	text-align: center;
 }
 
 #intro h2 {
@@ -86,12 +87,15 @@ export default {
 }
 
 #projects-arrow {
-	margin-top: 20vh;
+	margin-top: auto;
+	padding: 0.45rem;
+	border-radius: 0.85rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	background: #131A23;
 }
 
 #projects-arrow img {
@@ -110,5 +114,51 @@ export default {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+@media screen and (max-width: 1250px) {
+	#intro {
+		width: 85vw;
+	}
+
+	#intro h1 {
+		font-size: 3.5rem;
+	}
+
+	#intro h2 {
+		font-size: 1.25rem;
+	}
+
+	#projects-arrow img {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	#projects-arrow h2 {
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	#intro {
+		height: 65vh;
+		margin: 15vh auto 20vh auto;
+	}
+
+	#intro h1 {
+		font-size: 2.5rem;
+		line-height: 3rem;
+		margin-bottom: 0.8rem;
+	}
+
+	#intro h2 {
+		font-size: 1rem;
+	}
+
+	#projects-arrow {
+		padding: 0.3rem;
+		border-radius: 0.65rem;
+	}
 }
 </style>
