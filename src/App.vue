@@ -17,20 +17,22 @@
 		</div>
 
 		<div class="projects">
+			<Project />
+			<Project />
 		</div>
-		<!-- <Project v-for="(project, name) in projects"
-				:key="name" /> -->
 	</div>
 </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar';
+import Project from './components/Project'
 
 export default {
 	name: 'App',
 	components: {
 		Navbar,
+		Project,
 	},
 	created() {
 		document.title = "Testing";
@@ -102,8 +104,11 @@ export default {
 }
 
 .projects {
-	width: 60%;
+	width: 75%;
 	height: 100%;
 	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 </style>
