@@ -34,9 +34,6 @@ export default {
 		Navbar,
 		Project,
 	},
-	created() {
-		document.title = "Isaac Folmsbee";
-	},
 	methods: {
 		scrollTo(targetClass) {
 			var element = this.$el.getElementsByClassName(targetClass)[0];
