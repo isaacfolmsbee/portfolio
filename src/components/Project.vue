@@ -1,14 +1,14 @@
 <template>
-	<div class="project-wrapper">
-		<div class="image">
-		</div>
-		<h2>Title of the stuff</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus porttitor metus, eu ullamcorper mi convallis vitae. Vestibulum neque tortor, placerat vitae viverra a, auctor vitae neque. Nulla consequat varius sapien, at vehicula velit fringilla quis. Proin vel nisl non ex scelerisque mattis efficitur sed augue. Fusce in urna semper, scelerisque ipsum tristique, tempus dolor. Proin et urna nec orci blandit iaculis. Fusce faucibus commodo magna sed rhoncus. In nec ipsum ipsum. Donec ultrices in enim nec eleifend.</p>
-		<div class="buttons">
-			<h3>&lt; Code /&gt;</h3>
-			<h3>Live Demo</h3>
-		</div>
+<div class="project-wrapper">
+	<div class="image">
 	</div>
+	<h2>Title of the stuff</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus porttitor metus, eu ullamcorper mi convallis vitae. Vestibulum neque tortor, placerat vitae viverra a, auctor vitae neque. Nulla consequat varius sapien, at vehicula velit fringilla quis. Proin vel nisl non ex scelerisque mattis efficitur sed augue. Fusce in urna semper, scelerisque ipsum tristique, tempus dolor. Proin et urna nec orci blandit iaculis. Fusce faucibus commodo magna sed rhoncus. In nec ipsum ipsum. Donec ultrices in enim nec eleifend.</p>
+	<div class="buttons">
+		<h3>&lt; Code /&gt;</h3>
+		<h3>Live Demo</h3>
+	</div>
+</div>
 </template>
 <script>
 export default {

@@ -1,25 +1,25 @@
 <template>
-	<div class="navbar-wrapper">
-		<div class="img-container">
-			<a href="https://github.com/isaacfolmsbee" 
-				target="_blank" rel="noopener noreferrer">
-				<img src="github.svg" alt="Github icon">
-			</a>
-		</div>
-		<div class="img-container">
-			<a href="https://www.linkedin.com/in/isaac-folmsbee-a72487201/" 
-				target="_blank" rel="noopener noreferrer">
-				<img src="linkedin.svg" alt="Linkedin icon">
-			</a>
-		</div>
-		<div class="img-container">
-			<a href="#">
-				<img src="resume.svg" alt="resume icon">
-			</a>
-		</div>
-
-		<h2 class="contact">Contact</h2>
+<div class="navbar-wrapper">
+	<div class="img-container">
+		<a href="https://github.com/isaacfolmsbee" 
+			target="_blank" rel="noopener noreferrer">
+			<img src="github.svg" alt="Github icon">
+		</a>
 	</div>
+	<div class="img-container">
+		<a href="https://www.linkedin.com/in/isaac-folmsbee-a72487201/" 
+			target="_blank" rel="noopener noreferrer">
+			<img src="linkedin.svg" alt="Linkedin icon">
+		</a>
+	</div>
+	<div class="img-container">
+		<a href="#">
+			<img src="resume.svg" alt="resume icon">
+		</a>
+	</div>
+
+	<h2 class="contact">Contact</h2>
+</div>
 </template>
 <script>
 export default {
