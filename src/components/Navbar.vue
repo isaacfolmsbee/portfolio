@@ -1,5 +1,5 @@
 <template>
-	<div class="wrapper">
+	<div class="navbar-wrapper">
 		<div class="img-container">
 			<a href="https://github.com/isaacfolmsbee" 
 				target="_blank" rel="noopener noreferrer">
@@ -27,7 +27,7 @@ export default {
 }
 </script>
 <style scoped>
-.wrapper {
+.navbar-wrapper {
 	position: fixed;
 	width: 6rem;
 	height: 100vh;

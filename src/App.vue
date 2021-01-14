@@ -9,14 +9,17 @@
 				new technologies to create clean and efficient websites!
 			</h2>
 
-			<!-- <div class="projects-arrow">
+			<div id="projects-arrow"
+				@click="scrollTo('projects')">
 				<h2>Projects</h2>
-				<h1>\/</h1>
-			</div> -->
+				<img src="down-arrow.svg" alt="downward arrow">
+			</div>
 		</div>
 
+		<div class="projects">
+		</div>
 		<!-- <Project v-for="(project, name) in projects"
-			:key="name" /> -->
+				:key="name" /> -->
 	</div>
 </div>
 </template>
@@ -31,6 +34,12 @@ export default {
 	},
 	created() {
 		document.title = "Testing";
+	},
+	methods: {
+		scrollTo(targetClass) {
+			var element = this.$el.getElementsByClassName(targetClass)[0];
+			element.scrollIntoView({behavior: 'smooth'});
+		}
 	}
 }
 </script>
@@ -49,12 +58,13 @@ export default {
 	background: #383C44;
 	width: 100vw;
 	height: 100vh;
+	overflow: auto;
 }
 
 #intro {
-	width: 60vw;
-	margin: 0 auto;
-	padding-top: 30vh;
+	width: 60%;
+	height: 80%;
+	margin: 10% auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -71,5 +81,29 @@ export default {
 	color: #C0C0C0;
 	font-family: 'Strait', sans-serif;
 	text-align: center;
+}
+
+#projects-arrow {
+	margin-top: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+#projects-arrow img {
+	width: 3rem;
+	height: 3rem;
+}
+
+#projects-arrow h2 {
+	font-size: 1.8rem;
+}
+
+.projects {
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
 }
 </style>
