@@ -3,18 +3,18 @@
 	<div class="img-container">
 		<a href="https://github.com/isaacfolmsbee" 
 			target="_blank" rel="noopener noreferrer">
-			<img src="github.svg" alt="Github icon">
+			<img src="@/assets/icons/github.svg" alt="Github icon">
 		</a>
 	</div>
 	<div class="img-container">
 		<a href="https://www.linkedin.com/in/isaacfolmsbee/" 
 			target="_blank" rel="noopener noreferrer">
-			<img src="linkedin.svg" alt="Linkedin icon">
+			<img src="@/assets/icons/linkedin.svg" alt="Linkedin icon">
 		</a>
 	</div>
 	<div class="img-container">
 		<a href="#">
-			<img src="resume.svg" alt="resume icon">
+			<img src="@/assets/icons/resume.svg" alt="resume icon">
 		</a>
 	</div>
 
@@ -23,7 +23,7 @@
 </template>
 <script>
 export default {
-	name: "Navbar",
+	name: "TheNavbar",
 	props: {
 		isModalActive: {
 			required: true,

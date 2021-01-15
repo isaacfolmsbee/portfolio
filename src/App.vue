@@ -1,20 +1,12 @@
 <template>
 <div id="app" 
 	:class="{ 'disable-scroll': isModalActive }">
-	<Navbar 
+	<TheNavbar 
 		:isModalActive="isModalActive" 
 		@openModal="isModalActive = true" />
 
-	<div class="modal-bg"
-		:class="{ active: isModalActive }">
-
-		<div class="modal-wrapper">
-			<img src="close.svg" alt="close button" @click="isModalActive = false">
-			<h1>Want to contact me?</h1>
-			<h2>Shoot me an email with your inquiry and I'll get back to you soon!</h2>
-			<h3>if@sent.com</h3>
-		</div>
-	</div>
+	<TheModal v-if="isModalActive" 
+		@closeModal="isModalActive = false" />
 
 	<div id="intro">
 		<h1>Isaac Folmsbee</h1>
@@ -26,26 +18,30 @@
 		<div id="projects-arrow"
 			@click="scrollTo('projects')">
 			<h2>Projects</h2>
-			<img src="down-arrow.svg" alt="downward arrow">
+			<img src="@/assets/icons/down-arrow.svg" alt="downward arrow">
 		</div>
 	</div>
 
 	<div class="projects">
-		<Project />
-		<Project />
+		<ElderonProject />
+		<BugTrackerProject />
 	</div>
 </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar';
-import Project from './components/Project'
+import TheNavbar from './components/TheNavbar';
+import TheModal from './components/TheModal';
+import ElderonProject from './components/Projects/ElderonProject';
+import BugTrackerProject from './components/Projects/BugTrackerProject';
 
 export default {
 	name: 'App',
 	components: {
-		Navbar,
-		Project,
+		TheNavbar,
+		TheModal,
+		ElderonProject,
+		BugTrackerProject,
 	},
 	data() {
 		return {
@@ -80,69 +76,6 @@ export default {
 
 #app.disable-scroll {
 	overflow-y: hidden;
-}
-
-.modal-bg {
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	background-color: rgba(255, 255, 255, 0.35);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s, opacity 450ms;
-}
-
-.modal-bg.active {
-	visibility: visible;
-	opacity: 1;
-}
-
-.modal-wrapper {
-	position: relative;
-	width: 24rem;
-	height: 16rem;
-	background: #131A23;
-	border-radius: 1rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.modal-wrapper img {
-	position: absolute;
-	right: 0.3rem;
-	top: 0.3rem;
-	width: 1.6rem;
-	height: 1.6rem;
-	cursor: pointer;
-}
-
-.modal-wrapper h1 {
-	margin-top: 0.35rem;
-	color: #ebebeb;
-	font-size: 2.2rem;
-	font-family: 'Francois One', sans-serif;
-}
-
-.modal-wrapper h2 {
-	width: 80%;
-	margin-top: 0.1rem;
-	color: #cacaca;
-	font-size: 1.8rem;
-	font-family: 'Strait', sans-serif;
-	text-align: center;
-}
-
-.modal-wrapper h3 {
-	margin: auto;
-	color: #ebebeb;
-	font-size: 2.25rem;
-	font-family: 'Gelasio', serif;
 }
 
 #intro {
@@ -232,45 +165,6 @@ export default {
 }
 
 @media screen and (max-width: 800px) {
-	.modal-bg {
-		z-index: 1;
-		background-color: unset;
-		transition: visibility 0s, opacity 650ms;
-	}
-
-	.modal-wrapper {
-		position: relative;
-		width: 100vw;
-		height: 100vh;
-		border-radius: 0;
-	}
-
-	.modal-wrapper img {
-		position: absolute;
-		right: 1rem;
-		top: 1rem;
-		width: 1.8rem;
-		height: 1.8rem;
-	}
-
-	.modal-wrapper h1 {
-		width: 92%;
-		margin-top: 12vh;
-		font-size: 2rem;
-		text-align: center;
-	}
-
-	.modal-wrapper h2 {
-		width: 92%;
-		margin-top: 0.25rem;
-		font-size: 1.5rem;
-	}
-
-	.modal-wrapper h3 {
-		margin-top: 8vh;
-		font-size: 2.25rem;
-	}
-
 	#intro {
 		height: 65vh;
 		padding-top: 15vh;

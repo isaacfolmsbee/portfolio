@@ -1,8 +1,8 @@
 <template>
 <div class="project-wrapper">
-	<img src="test-image.png" alt="project cover photo">
-	<h2>Title of the stuff</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus porttitor metus, eu ullamcorper mi convallis vitae. Vestibulum neque tortor, placerat vitae viverra a, auctor vitae neque. Nulla consequat varius sapien, at vehicula velit fringilla quis. Proin vel nisl non ex scelerisque mattis efficitur sed augue. Fusce in urna semper, scelerisque ipsum tristique, tempus dolor. Proin et urna nec orci blandit iaculis.</p>
+	<img src="@/assets/test-image.png" alt="project cover photo">
+	<h2>Bug Tracker</h2>
+	<p>The Bug Tracker project is a web based application that is scheduled to be worked on over the next couple months. Once done this card will be updated.</p>
 	<div class="buttons">
 		<h3>&lt; Code /&gt;</h3>
 		<h3>Live Demo</h3>
@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-	name: "Project"
+	name: "BugTrackerProject"
 }
 </script>
 <style scoped>
