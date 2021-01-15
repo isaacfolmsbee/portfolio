@@ -7,7 +7,7 @@
 		</a>
 	</div>
 	<div class="img-container">
-		<a href="https://www.linkedin.com/in/isaac-folmsbee-a72487201/" 
+		<a href="https://www.linkedin.com/in/isaacfolmsbee/" 
 			target="_blank" rel="noopener noreferrer">
 			<img src="linkedin.svg" alt="Linkedin icon">
 		</a>
