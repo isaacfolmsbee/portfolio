@@ -18,12 +18,18 @@
 		</a>
 	</div>
 
-	<h2 class="contact">Contact</h2>
+	<h2 class="contact" @click="$emit('openModal')">Contact</h2>
 </div>
 </template>
 <script>
 export default {
-	name: "Navbar"
+	name: "Navbar",
+	props: {
+		isModalActive: {
+			required: true,
+			type: Boolean,
+		}
+	}
 }
 </script>
 <style scoped>
@@ -46,7 +52,7 @@ export default {
 	align-items: center;
 }
 
-img {
+.img-container img {
 	width: 3rem;
 	height: 3rem;
 	margin: auto 0;
@@ -54,7 +60,7 @@ img {
 	transition: height 350ms, width 350ms;
 }
 
-img:hover {
+.img-container img:hover {
 	width: 3.4rem;
 	height: 3.4rem;
 }
@@ -93,13 +99,13 @@ img:hover {
 		margin-right: auto;
 	}
 
-	img {
+	.img-container img {
 		width: 2.5rem;
 		height: 2.5rem;
 		margin: 0 auto;
 	}
 
-	img:hover {
+	.img-container img:hover {
 		width: 3rem;
 		height: 3rem;
 	}
@@ -123,13 +129,13 @@ img:hover {
 		margin-left: 0.375rem;
 	}
 
-	img {
+	.img-container img {
 		width: 1.75rem;
 		height: 1.75rem;
 		transition: 0s;
 	}
 
-	img:hover {
+	.img-container img:hover {
 		width: 1.75rem;
 		height: 1.75rem;
 	}
