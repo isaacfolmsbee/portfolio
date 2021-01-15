@@ -1,6 +1,6 @@
 <template>
 <div class="project-wrapper">
-	<img src="@/assets/test-image.png" alt="project cover photo">
+	<img src="@/assets/test-image.jpg" alt="project cover photo">
 	<h2>Elderon</h2>
 	<p>Elderon is a minecraft datapack project I am currently working on. Once finished this card will give more details and a link to its website.</p>
 	<div class="buttons">
