@@ -1,9 +1,8 @@
 <template>
 <div class="project-wrapper">
-	<div class="image">
-	</div>
+	<img src="test-image.png" alt="project cover photo">
 	<h2>Title of the stuff</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus porttitor metus, eu ullamcorper mi convallis vitae. Vestibulum neque tortor, placerat vitae viverra a, auctor vitae neque. Nulla consequat varius sapien, at vehicula velit fringilla quis. Proin vel nisl non ex scelerisque mattis efficitur sed augue. Fusce in urna semper, scelerisque ipsum tristique, tempus dolor. Proin et urna nec orci blandit iaculis. Fusce faucibus commodo magna sed rhoncus. In nec ipsum ipsum. Donec ultrices in enim nec eleifend.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus porttitor metus, eu ullamcorper mi convallis vitae. Vestibulum neque tortor, placerat vitae viverra a, auctor vitae neque. Nulla consequat varius sapien, at vehicula velit fringilla quis. Proin vel nisl non ex scelerisque mattis efficitur sed augue. Fusce in urna semper, scelerisque ipsum tristique, tempus dolor. Proin et urna nec orci blandit iaculis.</p>
 	<div class="buttons">
 		<h3>&lt; Code /&gt;</h3>
 		<h3>Live Demo</h3>
@@ -17,8 +16,9 @@ export default {
 </script>
 <style scoped>
 .project-wrapper {
-	width: 45%;
-	height: 85%;
+	width: 34vw;
+	height: 90vh;
+	margin: 5vh 0;
 	background: #131A23;
 	border-radius: 1rem;
 	display: flex;
@@ -26,9 +26,10 @@ export default {
 	align-items: center;
 }
 
-.image {
-	width: 95%;
-	height: 28%;
+img {
+	display: block;
+	max-width: 95%;
+	max-height: 28%;
 	margin-top: 2.5%;
 	background: white;
 	border-radius: 1rem;
@@ -38,15 +39,18 @@ h2 {
 	margin: 0.4rem 0;
 	font-family: 'Francois One', sans-serif;
 	font-size: 2rem;
+	text-align: center;
 	color: #D6D6D6;
 }
 
 p {
-	width: 90%;
+	width: 85%;
+	max-height: 40%;
 	font-family: 'Strait', sans-serif;
 	font-size: 1.15rem;
 	color: #C0C0C0;
 	text-align: center;
+	overflow-y: auto;
 }
 
 .buttons {
@@ -69,5 +73,37 @@ p {
 
 .buttons h3:last-child {
 	float: right;
+}
+
+@media screen and (max-width: 1500px) {
+	.project-wrapper {
+		max-width: 90vw;
+		width: 25rem;
+		height: 80vh;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	h2 {
+		margin: 0.35rem 0;
+		font-size: 1.75rem;
+	}
+
+	p {
+		max-height: 42.5%;
+		font-size: 1rem;
+	}
+
+	.buttons {
+		width: 90%;
+		margin-top: auto;
+		margin-bottom: 0.8rem;
+	}
+
+	.buttons h3 {
+		border-radius: 0.65rem;
+		padding: 0.25rem 0.4rem;
+		font-size: 1rem;
+	}
 }
 </style>

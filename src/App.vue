@@ -49,21 +49,24 @@ export default {
 	padding: 0;
 }
 
-:root {
-	font-size: 24px
+html {
+	font-size: 24px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 #content {
 	background: #383C44;
 	width: 100vw;
-	height: 100vh;
-	overflow: auto;
+	overflow: hidden;
 }
 
 #intro {
 	width: 50vw;
 	height: 60vh;
-	margin: 30vh auto 10vh auto;
+	padding-top: 30vh;
+	padding-bottom: 10vh;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -105,12 +108,20 @@ export default {
 }
 
 .projects {
-	width: 75%;
-	height: 100%;
+	width: 75vw;
+	min-height: 100vh;
+	max-height: fit-content;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+	.projects {
+		padding-top: 5rem;
+		flex-direction: column;
+	}
 }
 
 @media screen and (max-width: 1250px) {
@@ -140,7 +151,8 @@ export default {
 
 	#intro {
 		height: 65vh;
-		margin: 15vh auto 20vh auto;
+		padding-top: 15vh;
+		padding-bottom: 20vh;
 	}
 
 	#intro h1 {
@@ -156,6 +168,11 @@ export default {
 	#projects-arrow {
 		padding: 0.3rem;
 		border-radius: 0.65rem;
+	}
+
+	.projects {
+		padding-top: 3.75rem;
+		flex-direction: column;
 	}
 }
 </style>
