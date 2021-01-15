@@ -33,6 +33,7 @@ img {
 	margin-top: 2.5%;
 	background: white;
 	border-radius: 1rem;
+	background: #131A23;
 }
 
 h2 {
