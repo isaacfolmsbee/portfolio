@@ -1,12 +1,9 @@
 <template>
-<div id="app" 
-	:class="{ 'disable-scroll': isModalActive }">
-	<TheNavbar 
-		:isModalActive="isModalActive" 
-		@openModal="isModalActive = true" />
+<div>
+	<TheNavbar @openModal="openModal()" />
 
-	<TheModal v-if="isModalActive" 
-		@closeModal="isModalActive = false" />
+	<TheModal v-if="isModalActive"
+		@closeModal="closeModal()" />
 
 	<div id="intro">
 		<h1>Isaac Folmsbee</h1>
@@ -52,6 +49,14 @@ export default {
 		scrollTo(targetClass) {
 			var element = this.$el.getElementsByClassName(targetClass)[0];
 			element.scrollIntoView({behavior: 'smooth'});
+		},
+		openModal() {
+			this.isModalActive = true;
+			document.body.classList.add('disable-scroll');
+		},
+		closeModal() {
+			this.isModalActive = false;
+			document.body.classList.remove('disable-scroll');
 		}
 	}
 }
@@ -67,14 +72,14 @@ export default {
 	font-size: 24px;
 }
 
-#app {
+body {
 	background: #383C44;
 	height: 100vh;
 	width: 100vw;
 	overflow-x: hidden;
 }
 
-#app.disable-scroll {
+body.disable-scroll {
 	overflow-y: hidden;
 }
 

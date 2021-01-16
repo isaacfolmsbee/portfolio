@@ -23,13 +23,7 @@
 </template>
 <script>
 export default {
-	name: "TheNavbar",
-	props: {
-		isModalActive: {
-			required: true,
-			type: Boolean,
-		}
-	}
+	name: "TheNavbar"
 }
 </script>
 <style scoped>
