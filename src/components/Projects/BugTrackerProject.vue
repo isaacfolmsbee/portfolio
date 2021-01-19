@@ -1,6 +1,6 @@
 <template>
 <div class="project-wrapper">
-	<img src="@/assets/test-image.jpg" alt="project cover photo">
+	<!-- <img src="@/assets/test-image.jpg" alt="project cover photo"> -->
 	<h2>Bug Tracker</h2>
 	<p>The Bug Tracker project is a web based application that is scheduled to be worked on over the next couple months. Once done this card will be updated.</p>
 	<div class="buttons">

@@ -18,7 +18,7 @@
 				@click="scrollTo('projects')">
 
 				<h2 class=" text-gray-300 text-center font-serif font-bold text-2xl">Projects</h2>
-				<img class="w-12 h-12" src="@/assets/icons/down-arrow.svg" alt="downward arrow">
+				<svg class="w-12 h-12 text-gray-300 fill-current" viewBox="0 0 24 24"><path d="M11 4h2v12l5.5-5.5l1.42 1.42L12 19.84l-7.92-7.92L5.5 10.5L11 16V4z"></path></svg>
 			</div>
 		</div>
 	</div>
