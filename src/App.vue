@@ -24,8 +24,46 @@
 	</div>
 
 	<div class="projects pt-24 2xl:pt-0 w-11/12 mx-auto lg:h-screen flex flex-col lg:flex-row justify-evenly items-center">
-		<BugTrackerProject />
-		<ElderonProject />
+		<Project>
+			<template v-slot:title>
+				Project Manager
+			</template>
+			<template v-slot:tools>
+				<h4 class="tool">Vue.JS</h4>
+				<h4 class="tool">Express.JS</h4>
+				<h4 class="tool">MongoDB</h4>
+				<h4 class="tool">TypeScript</h4>
+				<h4 class="tool">Responsive</h4>
+				<h4 class="tool">Tailwind</h4>
+				<h4 class="tool">Auth0</h4>
+				<h4 class="tool">HTML</h4>
+			</template>
+			<template v-slot:about>
+				The Project Manager project is a web based application that is scheduled to be worked on over the next couple months. Once done this card will be updated.
+			</template>
+		</Project>
+		<Project>
+			<template v-slot:title>
+				Elderon
+			</template>
+			<template v-slot:tools>
+				<h4 class="tool">Vue.JS</h4>
+				<h4 class="tool">Express.JS</h4>
+				<h4 class="tool">MongoDB</h4>
+				<h4 class="tool">TypeScript</h4>
+				<h4 class="tool">Responsive</h4>
+				<h4 class="tool">Tailwind</h4>
+				<h4 class="tool">Auth0</h4>
+				<h4 class="tool">GIT/Github</h4>
+				<h4 class="tool">mcfunction</h4>
+				<h4 class="tool">Blockbench</h4>
+				<h4 class="tool">JSON</h4>
+				<h4 class="tool">HTML</h4>
+			</template>
+			<template v-slot:about>
+				Elderon is a minecraft datapack project I am currently working on. Once finished this card will give more details and a link to its website.
+			</template>
+		</Project>
 	</div>
 </div>
 </template>
@@ -33,16 +71,14 @@
 <script>
 import TheNavbar from './components/TheNavbar';
 import TheModal from './components/TheModal';
-import ElderonProject from './components/Projects/ElderonProject';
-import BugTrackerProject from './components/Projects/BugTrackerProject';
+import Project from './components/Project';
 
 export default {
 	name: 'App',
 	components: {
 		TheNavbar,
 		TheModal,
-		ElderonProject,
-		BugTrackerProject,
+		Project,
 	},
 	data() {
 		return {
