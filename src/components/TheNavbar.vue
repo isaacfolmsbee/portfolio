@@ -1,5 +1,5 @@
 <template>
-<div class="fixed w-screen h-20 lg:h-28 2xl:w-28 2xl:h-screen flex 2xl:flex-col justify-center items-center bg-gray-900">
+<div class="fixed w-screen h-20 2xl:w-28 2xl:h-screen flex 2xl:flex-col justify-center items-center bg-gray-800 border-b-2 2xl:border-b-0 2xl:border-r-2 border-gray-600 z-10 text-gray-300">
 	<div class="flex 2xl:flex-col 2xl:mt-auto">
 		<a href="https://github.com/isaacfolmsbee" 
 			target="_blank" rel="noopener noreferrer">
@@ -14,16 +14,16 @@
 		</a>
 	</div>
 
-	<h2 class="mr-5 lg:mr-7 2xl:mr-0 2xl:mb-8 ml-auto 2xl:ml-0 2xl:mt-auto transition-colors duration-300 text-gray-200 lg:text-gray-400 lg:hover:text-gray-200 text-2xl lg:text-3xl cursor-pointer" @click="$emit('openModal')">Contact</h2>
+	<h2 class="mr-7 2xl:mr-0 2xl:mb-8 ml-auto 2xl:ml-0 2xl:mt-auto transition-colors duration-500 2xl:text-gray-400 2xl:hover:text-gray-100 text-2xl 2xl:text-3xl cursor-pointer" @click="$emit('openModal')">Contact</h2>
 </div>
 </template>
 
 <style scoped>
 .navbar-img {
-	@apply w-14 h-14 lg:w-20 lg:h-20 ml-3 lg:ml-5 2xl:mx-auto 2xl:my-4 fill-current text-gray-200 lg:text-gray-400 transition-colors duration-300
+	@apply w-14 h-14 2xl:w-20 2xl:h-20 ml-3 2xl:mx-auto 2xl:my-4 fill-current 2xl:text-gray-400 transition-colors duration-500
 }
 
 .navbar-img:hover {
-	@apply lg:text-gray-200
+	@apply 2xl:text-gray-200
 }
 </style>
