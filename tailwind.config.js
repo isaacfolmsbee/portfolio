@@ -17,7 +17,7 @@ module.exports = {
 			'sans': 'Francois One',
 			'serif': 'Strait',
 			'gelasio': 'Gelasio',
-		}
+		},
 	},
 	variants: {
 		extend: {

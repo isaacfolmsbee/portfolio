@@ -23,9 +23,9 @@
 		</div>
 	</div>
 
-	<div class="projects pt-10 2xl:pt-0 w-screen min-h-screen h-auto flex flex-col lg:flex-row justify-evenly items-center">
-		<ElderonProject />
+	<div class="projects pt-24 2xl:pt-0 w-11/12 mx-auto lg:h-screen flex flex-col lg:flex-row justify-evenly items-center">
 		<BugTrackerProject />
+		<ElderonProject />
 	</div>
 </div>
 </template>
