@@ -9,7 +9,7 @@ module.exports = {
 	theme: {
 		extend: {
 			animation: {
-				fadein: 'fadein 450ms linear',
+				fadein: 'fadein 0.4s linear',
 				'bounce-slow': 'bounce 2s linear infinite',
 			},
 			keyframes: {
@@ -25,18 +25,6 @@ module.exports = {
 			gelasio: 'Gelasio',
 		},
 		colors: {
-			secondary: {
-				'50': '#f1c1de',
-				'100': '#efb8da',
-				'200': '#eca7d3',
-				'300': '#e58ac5',
-				'400': '#de63b5',
-				'500': '#d22d9b',
-				'600': '#a6267e',
-				'700': '#841f66',
-				'800': '#6a1b54',
-				'900': '#611a4e',
-			},
 			primary: {
 				'50': '#9fddf9',
 				'100': '#97d7f7',
@@ -52,11 +40,6 @@ module.exports = {
 			gray: colors.gray,
 		},
 	},
-	variants: {
-		extend: {
-			textColor: ['active'],
-			animation: ['hover'],
-		},
-	},
+	variants: {},
 	plugins: [],
 };

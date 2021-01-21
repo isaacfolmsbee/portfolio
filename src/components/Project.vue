@@ -10,7 +10,7 @@
 		<p id="about-project" class=" w-11/12 mt-1 2xl:mt-2 ml-2 2xl:ml-3 text-gray-400 2xl:text-2xl font-serif font-medium flex-grow">
 			<slot name="about"></slot>
 		</p>
-		<div class="flex justify-evenly my-5 2xl:mb-12">
+		<div class="flex justify-evenly my-5 2xl:mb-12 whitespace-nowrap">
 			<a class="button" href="#">&lt; Code /&gt;</a>
 			<a class="button" href="#">Live Demo</a>
 		</div>
