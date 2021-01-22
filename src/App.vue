@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="projects pt-24 2xl:pt-0 w-11/12 mx-auto lg:h-screen flex flex-col lg:flex-row justify-evenly items-center">
-		<Project>
+		<Project codeURL="https://github.com/isaacfolmsbee/ProjectManager">
 			<template v-slot:title>
 				Project Manager
 			</template>

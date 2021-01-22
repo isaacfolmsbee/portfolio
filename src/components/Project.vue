@@ -11,11 +11,27 @@
 			<slot name="about"></slot>
 		</p>
 		<div class="flex justify-evenly my-5 2xl:mb-12 whitespace-nowrap">
-			<a class="button" href="#">&lt; Code /&gt;</a>
-			<a class="button" href="#">Live Demo</a>
+			<a class="button" :href="codeURL" target="_blank" rel="noopener noreferrer">&lt; Code /&gt;</a>
+			<a class="button" :href="demoURL" target="_blank" rel="noopener noreferrer">Live Demo</a>
 		</div>
 </div>
 </template>
+<script>
+export default {
+	props: {
+		codeURL: {
+			required: false,
+			default: "github.com",
+			type: String,
+		},
+		demoURL: {
+			required: false,
+			default: "#",
+			type: String,
+		},
+	}
+}
+</script>
 <style scoped>
 .button {
 	@apply text-gray-800 2xl:text-2xl p-1 2xl:p-2 bg-gray-400 rounded-lg

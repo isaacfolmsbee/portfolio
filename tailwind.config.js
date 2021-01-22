@@ -10,7 +10,7 @@ module.exports = {
 		extend: {
 			animation: {
 				fadein: 'fadein 0.4s linear',
-				'bounce-slow': 'bounce 2s linear infinite',
+				'bounce-slow': 'bounce 1.85s linear infinite',
 			},
 			keyframes: {
 				fadein: {
