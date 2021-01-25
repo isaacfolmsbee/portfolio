@@ -33,10 +33,7 @@
 				<h4 class="tool">Express.JS</h4>
 				<h4 class="tool">MongoDB</h4>
 				<h4 class="tool">TypeScript</h4>
-				<h4 class="tool">Responsive</h4>
 				<h4 class="tool">Tailwind</h4>
-				<h4 class="tool">Auth0</h4>
-				<h4 class="tool">HTML</h4>
 			</template>
 			<template v-slot:about>
 				The Project Manager project is a web based application that is scheduled to be worked on over the next couple months. Once done this card will be updated.
@@ -51,14 +48,9 @@
 				<h4 class="tool">Express.JS</h4>
 				<h4 class="tool">MongoDB</h4>
 				<h4 class="tool">TypeScript</h4>
-				<h4 class="tool">Responsive</h4>
 				<h4 class="tool">Tailwind</h4>
-				<h4 class="tool">Auth0</h4>
-				<h4 class="tool">GIT/Github</h4>
 				<h4 class="tool">mcfunction</h4>
 				<h4 class="tool">Blockbench</h4>
-				<h4 class="tool">JSON</h4>
-				<h4 class="tool">HTML</h4>
 			</template>
 			<template v-slot:about>
 				Elderon is a minecraft datapack project I am currently working on. Once finished this card will give more details and a link to its website.
