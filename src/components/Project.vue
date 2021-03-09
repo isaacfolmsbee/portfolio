@@ -16,6 +16,7 @@
 		</div>
 </div>
 </template>
+
 <script>
 export default {
 	props: {
@@ -32,7 +33,8 @@ export default {
 	}
 }
 </script>
-<style scoped>
+
+<style lang="postcss" scoped>
 .button {
 	@apply text-gray-800 2xl:text-2xl p-1 2xl:p-2 bg-gray-400 rounded-lg
 }

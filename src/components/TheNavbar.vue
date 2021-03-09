@@ -18,7 +18,7 @@
 </div>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
 .navbar-img {
 	@apply w-14 h-14 2xl:w-20 2xl:h-20 ml-3 2xl:mx-auto 2xl:my-4 fill-current 2xl:text-gray-400 transition-colors duration-500
 }

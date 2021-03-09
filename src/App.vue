@@ -7,10 +7,26 @@
 
 	<div id="intro" class="w-5/6 lg:w-4/6 2xl:w-1/2 h-screen mx-auto flex flex-col justify-center items-center text-center">
 		<div class="mt-20 lg:mt-0 flex-shrink h-1/3 2xl:h-1/2 flex flex-col justify-end">
-			<h1 class="text-5xl lg:text-7xl text-primary-300">Isaac Folmsbee</h1>
-			<h2 class="font-serif text-gray-500 text-2xl lg:text-3xl font-bold">
-				I’m a Full-Stack web developer who loves using
-				new technologies to create clean and efficient websites!
+			<h1 class="text-5xl lg:text-7xl text-primary-300 cursor-default">Isaac Folmsbee</h1>
+			<h2 class="cursor-default">
+				<span class="text-hover">I'm </span>
+				<span class="text-hover">a </span>
+				<span class="text-hover">Full</span>
+				<span class="text-hover">-</span>
+				<span class="text-hover">Stack </span>
+				<span class="text-hover">web </span>
+				<span class="text-hover">developer </span>
+				<span class="text-hover">who </span>
+				<span class="text-hover">loves </span>
+				<span class="text-hover">using </span>
+				<span class="text-hover">new </span>
+				<span class="text-hover">technologies </span>
+				<span class="text-hover">to </span>
+				<span class="text-hover">create </span>
+				<span class="text-hover">clean </span>
+				<span class="text-hover">and </span>
+				<span class="text-hover">efficient </span>
+				<span class="text-hover">websites!</span>
 			</h2>
 		</div>
 		<div class="flex-shrink h-1/2 flex flex-col justify-center">
@@ -93,3 +109,9 @@ export default {
 	}
 }
 </script>
+
+<style lang="postcss" scoped>
+.text-hover {
+	@apply font-serif text-gray-500 text-2xl lg:text-3xl font-bold hover:text-gray-400 transition-colors duration-200;
+}
+</style>

@@ -9,7 +9,7 @@ module.exports = {
 	theme: {
 		extend: {
 			animation: {
-				fadein: 'fadein 0.4s linear',
+				fadein: 'fadein 0.3s linear',
 				'bounce-slow': 'bounce 1.85s linear infinite',
 			},
 			keyframes: {
